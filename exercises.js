@@ -49,6 +49,12 @@ console.log(canVote(19));
  * Console.log your result.
 */
 
+function login(password){
+  if(password == "test1234"){
+    return "Login success!";
+  }
+}
+console.log(login("test1234"));
 
 /*
  * #3
