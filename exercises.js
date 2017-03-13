@@ -76,7 +76,7 @@ function isGreaterThan(first, second){
     return false;
   }
 }
-console.log (isGreaterThan(5,7));
+console.log (isGreaterThan(5,17));
 /*
  * #4
  * Function - mustBeTrue
