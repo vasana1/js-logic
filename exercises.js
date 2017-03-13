@@ -88,7 +88,12 @@ console.log (isGreaterThan(5,17));
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
-
+function mustBeTrue(boo){
+  if (mustBeTrue = "true"){
+    return true;
+  }
+}
+console.log(true);
 
 /*
  * #5
