@@ -248,7 +248,14 @@ console.log(daClub(21,21));
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
-
+function graduation(credits, thesis){
+  if((credits >= 120) || (thesis === "paper")){
+    return "Congratulations on a job well done";
+  }else{
+    return "See you in summer school";
+  }
+}
+console.log(graduation(115, "none"));
 
 /*
  * #13
@@ -261,7 +268,16 @@ console.log(daClub(21,21));
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
-
+function moneyTrain(speed){
+  if (speed < 50){
+    return "You are riding Honolulu's Rail";
+    } else if (speed < 100){
+        return "You are riding an Amtrak";
+      } else {
+        return "Now you ballin in the Shinkansen";
+      }
+    }
+console.log(moneyTrain(150));
 
 /*
  * #14
