@@ -146,7 +146,14 @@ console.log(isEqual(5,7));
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
-
+function notEqual(first, second){
+  if (first === second){
+    return "Cause it's like you're my mirror";
+    }else{
+      return "Opposites do attract";
+  }
+  }
+console.log (notEqual("yes", "no"));
 
 /*
  * #8
@@ -159,7 +166,14 @@ console.log(isEqual(5,7));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
-
+function spareChange(money){
+  if (money > 100){
+    return true;
+  }else
+  {return false;
+  }
+}
+console.log (spareChange(50));
 
 /*
  * #9
@@ -174,7 +188,13 @@ console.log(isEqual(5,7));
  * The function will return true if the sum of all the number values is greater than 30, otherwise it will return false.
  * Console.log your result.
 */ 
-
+function dirty30(one, two, three){
+  if ((one + two + three) > 30){
+    return true;
+  }else
+  {return false};
+}
+console.log(dirty30(1,25,9));
 
 /*
  * #10
@@ -187,7 +207,13 @@ console.log(isEqual(5,7));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-
+function evenStevens(num){
+  if (num % 2 === 0){
+    return true;
+  }else
+  {return false;}
+}
+console.log(evenStevens(51));
 
 /*
  * #11
@@ -201,7 +227,14 @@ console.log(isEqual(5,7));
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
-
+function daClub(cover, age){
+  if ((cover >=21) & (age >=21)){
+    return "Welcome to the Legends Lounge";
+  }else{
+    return "Chuck E Cheese is across the street";
+  }
+}
+console.log(daClub(21,21));
 
 /*
  * #12
