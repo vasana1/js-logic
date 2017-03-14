@@ -107,11 +107,11 @@ console.log(true);
  * Console.log your result.
 */
 function bigBird(word){
-  if (word.length = 3){
+  if (word.length === 3){
     return "Word to Big Bird!";
   }
 }
-console.log(bigBird("toolong"));
+console.log(bigBird("too"));
 
 /*
  * #6
@@ -297,9 +297,11 @@ var doughnutPrice = 4
 var doughnutBought = 0
 
 function buyDoughnut(){
-  return doughnutBought ++;
-  return budget - doughnutPrice;
+  budget = budget - doughnutPrice
+  doughnutBought++; 
 }
+console.log(budget, doughnutBought);
+buyDoughnut();
 console.log(budget, doughnutBought);
 
 /*
@@ -357,7 +359,12 @@ for (var i=0; i<myFavFoods.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+var numArray = [2, 4, 6, 8, 19];
+var total = 0;
 
+function sumItUp(arr){
+  return 
+}
 
 /*
  * #18
