@@ -292,17 +292,23 @@ console.log(moneyTrain(150));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */
-var budget = 24
-var doughnutPrice = 4
-var doughnutBought = 0
+var budget = 24;
+var doughnutPrice = 4;
+var doughnutBought = 0;
 
 function buyDoughnut(){
-  budget = budget - doughnutPrice
-  doughnutBought++; 
+  if(budget >= doughnutPrice){
+    budget -= doughnutPrice; 
+    doughnutBought++;
+  }
 }
-console.log(budget, doughnutBought);
 buyDoughnut();
-console.log(budget, doughnutBought);
+console.log(budget);
+console.log(doughnutBought);
+
+buyDoughnut();
+console.log(budget);
+console.log(doughnutBought);
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -330,9 +336,8 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
-var players = [1, 2, 3, 4, 5];
-for (var i = 0; i<players.length; i++){
-  console.log("Player: " + players[i]);
+for (var i = 1; i<6; i++){
+  console.log("Player: " + i);
 }
 
 /* 
@@ -363,11 +368,12 @@ var numArray = [2, 4, 6, 8, 10];
 var total = 0;
 function sumItUp(arr){
   for (var i=0; i<arr.length; i++){
-    total = arr[i] + total;
+    total += arr[i];
   }
   return total;
  } 
-console.log(sumItUp(numArray));
+sumItUp(numArray);
+console.log(total);
 
 /*
  * #18
@@ -385,6 +391,18 @@ console.log(sumItUp(numArray));
   var east = [];
   var west = [];
 
+  function allStars(ballers){
+    for (var i=0; i<ballers.length; i++){
+      if(i % 2 === 0){
+        east.push(ballers[i])
+      }else{
+        west.push(ballers[i]);
+      }
+    }
+ }
+allStars(players);
+console.log(east);
+console.log(west);
 
 /*
  * #19
@@ -400,6 +418,15 @@ console.log(sumItUp(numArray));
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+  function subways(special){
+    for (var i=0; i<special.length; i++){
+      if(i % 2 === 1){
+        special[i] = "Classic Tuna";
+        }
+      }
+    }
+subways(subOftheDay);
+console.log(subOftheDay);
 
 /*
 Final Boss
@@ -413,10 +440,20 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
-  var phrase = "An apple a day keeps Alice feeling awesome!"
+  var phrase = "An apple a day keeps Alice feeling awesome!";
+  var newArray = [];
   
+  function removeLetter(str){
+    for (var i=0; i<str.length; i++){
+      console.log(str[i]);
+      if(str[i] !== "a" && str[i] !=="A"){
+        newArray.push(str[i]);
+      }
+    }
+  }
 
-
+removeLetter(phrase);
+console.log(newArray);
 
 
 
